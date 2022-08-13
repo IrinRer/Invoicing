@@ -1,10 +1,7 @@
 import React from 'react';
-import Nav from '../Nav';
 
 const Profile = () => {
-    return (
-        <Nav/>
-    )
+    return <p>profile</p>
 }
 
 export default Profile;

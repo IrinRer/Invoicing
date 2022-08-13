@@ -1,3 +1,4 @@
+import Nav from 'component/Nav';
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Profile from '../../component/Profile';
@@ -6,6 +7,7 @@ import { RouteEnum } from '../../constants/Nav/index';
 const Routs = () => {
   return (
     <BrowserRouter>
+     <Nav/>
       <Routes>
         <Route path={RouteEnum.PROFILE} element={<Profile/>} />
         <Route path={RouteEnum.SECURITY} element={<p>Security</p>} />

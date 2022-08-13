@@ -1,3 +1,42 @@
+@import 'styles/color.scss';
+@import 'styles/font-size';
+
 .ul {
     list-style: none;
+    max-width: 300px;
+    font-size: $font-size12;
+    color: $header-nav;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Metropolis', sans-serif;
+
+    .li {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: $font-size16;
+    }
+
+    .link {
+        text-decoration: none;
+        text-transform: none;
+        font-weight: 400;
+        color: $link;
+    }
+
+    .link_active {
+        text-decoration: none;
+        text-transform: none;
+        font-weight: 700;
+        color: $link;
+    }
+}
+
+.link_active  + .line {
+    background-color: $active-link;;
+    width: 5px;
+    height: 40px;
+    position: absolute;
+    left: 0;
 }
