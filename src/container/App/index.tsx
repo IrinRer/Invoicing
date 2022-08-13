@@ -1,7 +1,8 @@
 import React from 'react';
+import Routs from '../Route';
 
 const App = () => {
-  return <p>ggggg</p>;
+  return <Routs />;
 };
 
 export default App;
