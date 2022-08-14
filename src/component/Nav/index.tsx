@@ -5,7 +5,7 @@ import styles from './index.module.scss';
 
 const Nav = () => {
   return (
-    <nav>
+    <nav className={styles.nav}>
       <ul className={styles.ul}>
         {' '}
         Personal
@@ -18,7 +18,7 @@ const Nav = () => {
           >
             Profile
           </NavLink>
-          <div className={styles.line}/>
+          <div className={styles.line} />
         </li>
         <li className={styles.li}>
           <NavLink
@@ -29,7 +29,7 @@ const Nav = () => {
           >
             Security
           </NavLink>
-          <div className={styles.line}/>
+          <div className={styles.line} />
         </li>
         <li className={styles.li}>
           <NavLink
@@ -40,7 +40,7 @@ const Nav = () => {
           >
             Notifications
           </NavLink>
-          <div className={styles.line}/>
+          <div className={styles.line} />
         </li>
       </ul>
       <ul className={styles.ul}>
@@ -55,7 +55,7 @@ const Nav = () => {
           >
             E-invoicing
           </NavLink>
-          <div className={styles.line}/>
+          <div className={styles.line} />
         </li>
         <li className={styles.li}>
           <NavLink
@@ -66,7 +66,7 @@ const Nav = () => {
           >
             Business profile
           </NavLink>
-          <div className={styles.line}/>
+          <div className={styles.line} />
         </li>
         <li className={styles.li}>
           <NavLink
@@ -77,7 +77,7 @@ const Nav = () => {
           >
             Plan and limits
           </NavLink>
-          <div className={styles.line}/>
+          <div className={styles.line} />
         </li>
         <li className={styles.li}>
           <NavLink
@@ -88,7 +88,7 @@ const Nav = () => {
           >
             Team
           </NavLink>
-          <div className={styles.line}/>
+          <div className={styles.line} />
         </li>
       </ul>
     </nav>

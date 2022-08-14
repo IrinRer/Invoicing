@@ -4,6 +4,6 @@ export enum RouteEnum {
   NOTIFICATIONS ='notifications',
   E_INVOICING = 'e-invoicing',
   BUSINESS_PROFILE ='business-profile',
-  PLAN_LIMITS = 'plan-limits',
+  PLAN_LIMITS = '/',
   TEAM = 'team'
 }
