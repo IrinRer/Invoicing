@@ -23,7 +23,7 @@ const Routs = () => {
             element={<p>Business profile</p>}
           />
           <Route path={RouteEnum.E_INVOICING} element={<p>E-invoicing</p>} />
-          <Route index element={<PlanLimits />} />
+          <Route index element={<PlanLimits/>} />
           <Route path={RouteEnum.TEAM} element={<p>Team</p>} />
         </Routes>
       </main>

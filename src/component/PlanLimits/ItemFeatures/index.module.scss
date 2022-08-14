@@ -1,0 +1,115 @@
+@import 'styles/color.scss';
+@import 'styles/font-size';
+
+.wrapper_features {
+  display: flex;
+  
+  .p_features {
+    margin: 0;
+    color: $text;
+    font-family: 'Metropolis', sans-serif;
+    font-weight: 700;
+    font-size: $font-size20;
+    margin-right: 10px;
+  }
+}
+
+.block {
+  margin-top: 20px;
+  max-width: 664px;
+  max-height: 200px;
+  padding: 24px 40px;
+  border-radius: 12px;
+  background: $bgInfo;
+
+  .block_header {
+    display: flex;
+    justify-content: space-between;
+
+    .p_into_block_header {
+      margin: 0;
+      color: $text-action;
+      font-family: 'Metropolis', sans-serif;
+      font-weight: 700;
+      font-size: $font-size24;
+    }
+
+    .close {
+      cursor: pointer;
+    }
+  }
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Lato', sans-serif;
+  .ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    p {
+        font-weight: 400;
+        font-size: $font-size14;
+        color: $text;
+
+      &::before {
+        content: '';
+        width: 13px;
+        height: 8px;
+        display: inline-block;
+        border-top: 3px solid $borderInfo;
+        border-right: 3px solid $borderInfo;
+        border-radius: 2px;
+        transform: rotate(135deg);
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .price {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+    align-items: flex-end;
+    p {
+        color: $text;
+        font-family: 'Metropolis', sans-serif;
+        font-weight: 700;
+        margin: 0;
+        margin-bottom: 10px;
+        font-size: $font-size24;
+
+        span {
+            font-size: $font-size16;
+        }
+    }
+
+    .p_into_price {
+        font-family: 'Lato', sans-serif;
+        font-size: $font-size12;
+        font-weight: 400;
+        width: 170px;
+        text-align: end;
+        color: $header-nav;
+    }
+  }
+  
+  .btn_upgrade {
+    border-radius: 8px;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $active-link;
+    width: 85px;
+    padding: 8px 0px;
+    border: none;
+    font-size: $font-size14;
+    font-weight: 600;
+    color: white;
+    margin-top: 40px;
+    cursor: pointer;
+  }
+}
