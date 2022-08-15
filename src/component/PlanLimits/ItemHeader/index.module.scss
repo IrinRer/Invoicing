@@ -1,5 +1,6 @@
-@import 'styles/color.scss';
+@import 'styles/color';
 @import 'styles/font-size';
+@import 'styles/mixins';
 
 .article {
   width: 100%;
@@ -26,6 +27,11 @@
   .wrapper_header {
     display: flex;
     justify-content: space-between;
+
+    @include media-breakpoint-only(sm) {
+      flex-direction: column-reverse;
+      align-items: start;
+    }
   }
 }
 
@@ -45,10 +51,30 @@
   font-weight: 400;
   color: $text-action;
   font-size: $font-size16;
+
+  @include media-breakpoint-only(sm) {
+    padding: 0;
+  }
+
+  @include media-breakpoint-only(xs) {
+    padding: 0;
+  }
 }
 
 .wrapper_price {
   display: flex;
+  width: 100%;
+
+  @include media-breakpoint-only(sm) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  @include media-breakpoint-only(xs) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .p_price {
     font-family: 'Lato', sans-serif;
     color: $header-nav;
@@ -61,6 +87,16 @@
   display: flex;
   align-items: center;
   font-family: 'Lato', sans-serif;
+
+  @include media-breakpoint-only(sm) {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  @include media-breakpoint-only(xs) {
+    flex-direction: column;
+    align-items: start;
+  }
 
   .button_switch {
     color: white;
@@ -78,6 +114,14 @@
     width: 165px;
     height: 32px;
     margin-right: 15px;
+
+    @include media-breakpoint-only(sm) {
+      margin-top: 20px;
+    }
+
+    @include media-breakpoint-only(xs) {
+      margin-top: 20px;
+    }
   }
 }
 
