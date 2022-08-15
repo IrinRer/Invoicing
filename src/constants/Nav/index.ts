@@ -7,3 +7,10 @@ export enum RouteEnum {
   PLAN_LIMITS = '/',
   TEAM = 'team'
 }
+
+export interface IDataHeader {
+  header: string,
+  price: string,
+  header_features: string,
+  price_features: string,
+};
