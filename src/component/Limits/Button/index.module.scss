@@ -1,0 +1,39 @@
+@import 'styles/color.scss';
+@import 'styles/font-size';
+
+.btn_wrapper {
+  display: flex;
+  flex-direction: column;
+  .btn {
+    border: none;
+    background-color: $background;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: $text;
+    font-size: $font-size16;
+    cursor: pointer;
+  }
+
+  .active {
+    border: none;
+    background-color: $background;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    font-size: $font-size16;
+    color: $text;
+    font-weight: 700;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .active + .line {
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: $active-link;
+    margin-top: 12px;
+  }
+}

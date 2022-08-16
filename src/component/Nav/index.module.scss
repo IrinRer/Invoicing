@@ -21,47 +21,21 @@
 }
 
 .ul {
-  list-style: none;
-  font-size: $font-size12;
-  color: $header-nav;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-family: 'Metropolis', sans-serif;
-
-  &:last-of-type {
-    margin-top: 28px;
-  }
+  @include ulLink();
 
   .li {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    align-items: center;
-    line-height: 40px;
-    font-size: $font-size16;
+    @include liLink();
   }
 
   .link {
-    text-decoration: none;
-    text-transform: none;
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    color: $text;
+    @include link();
   }
 
   .link_active {
-    text-decoration: none;
-    text-transform: none;
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    color: $text;
+    @include link_active();
   }
 }
 
 .link_active + .line {
-  background-color: $active-link;
-  width: 5px;
-  height: 40px;
-  position: absolute;
-  left: 0;
+  @include line();
 }

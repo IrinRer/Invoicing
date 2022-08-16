@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  background-color: #E5E5E5;;
-  font-family: 'Lato'; 
+  background-color: #e5e5e5;
+  font-family: 'Lato';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -23,4 +23,3 @@ code {
   font-style: normal;
   font-display: swap;
 }
-
