@@ -5,3 +5,5 @@ export interface ILimitsBD {
   color: string;
   text_under_line: string;
 }
+
+export const WIDTH_LINE = 312;

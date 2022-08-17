@@ -3,7 +3,12 @@ import React from 'react';
 import { bd } from '../bd';
 import styles from './index.module.scss';
 
-const Buttons = ({ name, handleClickBtn }) => {
+interface IProps {
+  name: string;
+  handleClickBtn: (item: string, e: any) => void;
+}
+
+const Buttons: React.FC<IProps> = ({ name, handleClickBtn }) => {
   return (
     <>
       {bd.map((item) => {

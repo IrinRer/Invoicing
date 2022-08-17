@@ -1,8 +1,13 @@
+import { ILimitsBD, WIDTH_LINE } from 'constants/Limits';
 import React, { useRef } from 'react';
 import styles from './index.module.scss';
 
-const Item = ({bd}) => {
-  const widthLine: number = 312;
+interface IProps {
+  bd: Array<ILimitsBD>;
+}
+
+const Item: React.FC<IProps> = ({ bd }) => {
+  const widthLine: number = WIDTH_LINE;
   const width = useRef<any>();
 
   return (
