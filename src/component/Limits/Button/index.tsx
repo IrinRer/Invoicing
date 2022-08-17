@@ -12,7 +12,7 @@ const Buttons = ({ name, handleClickBtn }) => {
         });
 
         return (
-          <div className={styles.btn_wrapper}>
+          <div className={styles.btn_wrapper} key={item}>
             <button
               className={className}
               type="button"

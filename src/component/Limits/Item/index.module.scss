@@ -1,0 +1,65 @@
+@import 'styles/color.scss';
+@import 'styles/font-size';
+@import 'styles/mixins';
+
+.wrapper_main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.wrapper {
+  width: 312px;
+
+  .wrapper_header {
+    display: flex;
+    justify-content: space-between;
+    
+    p {
+        @include link();
+        font-size: $font-size16;
+    }
+
+    .number {
+        font-size: $font-size14;
+
+        span {
+            font-size: $font-size14;
+            color: $header-nav;
+            cursor: pointer;
+        }
+    }
+  }
+}
+
+.line_color[color='blue'] {
+  background-color: $text-action;
+  height: 8px;
+  border-radius: 4px;
+  margin-top: -9px;
+}
+
+.line_color[color='red'] {
+  background-color: $active-link;
+  height: 8px;
+  border-radius: 4px;
+  margin-top: -9px;
+}
+
+.line_non_color {
+  width: 312px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: $line;
+}
+
+.text {
+    @include link();
+    font-size: $font-size14;
+    color: $header-nav;
+
+    span {
+        text-decoration: underline;
+    }
+}
