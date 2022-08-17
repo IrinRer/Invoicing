@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { bd1, bd2 } from './bdLimits';
 import Item from './Item';
 import styles from './index.module.scss';
 import Buttons from './Button';
@@ -21,7 +22,7 @@ const Limits = () => {
       <div className={styles.wrapper}>
         <Buttons name={name} handleClickBtn={handleClickBtn} />
       </div>
-      {btnClick ? <Item /> : <p>gggg</p>}
+      {btnClick ? <Item bd={bd1} /> : <Item bd={bd2} />}
     </div>
   );
 };

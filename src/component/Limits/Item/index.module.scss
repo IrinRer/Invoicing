@@ -47,6 +47,13 @@
   margin-top: -9px;
 }
 
+.line_color[color='green'] {
+    background-color: $green;
+    height: 8px;
+    border-radius: 4px;
+    margin-top: -9px;
+  }
+
 .line_non_color {
   width: 312px;
   height: 8px;

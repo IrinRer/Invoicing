@@ -1,14 +1,13 @@
 import React, { useRef } from 'react';
-import { bd1 } from './bd';
 import styles from './index.module.scss';
 
-const Item = () => {
+const Item = ({bd}) => {
   const widthLine: number = 312;
   const width = useRef<any>();
 
   return (
     <div className={styles.wrapper_main}>
-      {bd1.map((item) => {
+      {bd.map((item) => {
         width.current =
           (widthLine * Number(item.first_number)) / Number(item.second_number);
         return (
