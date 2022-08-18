@@ -38,7 +38,7 @@ const Routs = () => {
               path={RouteEnum.TEAM}
               element={<CommonComponent text="Team" />}
             />
-            <Route index element={<PlanLimits />} />
+            <Route path={RouteEnum.PLAN_LIMITS} element={<PlanLimits />} />
           </Routes>
           <Limits />
         </article>
