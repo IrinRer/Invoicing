@@ -9,7 +9,7 @@ import styles from './index.module.scss';
 
 const Routs = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <main className={styles.main}>
         <Nav />
         <article className={styles.article}>
