@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/IrinRer/Invoicing.git/static/css/main.0f812a5e.css",
-    "main.js": "/IrinRer/Invoicing.git/static/js/main.41606022.js",
-    "static/media/star.svg": "/IrinRer/Invoicing.git/static/media/star.918fe44023fa279104099c7bac3e6327.svg",
-    "index.html": "/IrinRer/Invoicing.git/index.html",
-    "main.0f812a5e.css.map": "/IrinRer/Invoicing.git/static/css/main.0f812a5e.css.map",
-    "main.41606022.js.map": "/IrinRer/Invoicing.git/static/js/main.41606022.js.map"
+    "main.css": "/Invoicing/static/css/main.0f812a5e.css",
+    "main.js": "/Invoicing/static/js/main.812c60d0.js",
+    "static/media/star.svg": "/Invoicing/static/media/star.918fe44023fa279104099c7bac3e6327.svg",
+    "index.html": "/Invoicing/index.html",
+    "main.0f812a5e.css.map": "/Invoicing/static/css/main.0f812a5e.css.map",
+    "main.812c60d0.js.map": "/Invoicing/static/js/main.812c60d0.js.map"
   },
   "entrypoints": [
     "static/css/main.0f812a5e.css",
-    "static/js/main.41606022.js"
+    "static/js/main.812c60d0.js"
   ]
 }
