@@ -14,6 +14,7 @@ const Routs = () => {
         <Nav />
         <article className={styles.article}>
           <Routes>
+            <Route path={RouteEnum.PLAN_LIMITS} element={<PlanLimits />} />
             <Route
               path={RouteEnum.PROFILE}
               element={<CommonComponent text="Profile" />}
@@ -38,7 +39,6 @@ const Routs = () => {
               path={RouteEnum.TEAM}
               element={<CommonComponent text="Team" />}
             />
-            <Route path={RouteEnum.PLAN_LIMITS} element={<PlanLimits />} />
           </Routes>
           <Limits />
         </article>
