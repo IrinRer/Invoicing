@@ -3,7 +3,7 @@ import Nav from 'component/Nav';
 import PlanLimits from 'component/PlanLimits';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Limits from 'component/Limits';
-import Profile from '../../component/Profile';
+import CommonComponent from '../../common/CommonComponent';
 import { RouteEnum } from '../../constants/Nav/index';
 import styles from './index.module.scss';
 
@@ -14,18 +14,30 @@ const Routs = () => {
         <Nav />
         <article className={styles.article}>
           <Routes>
-            <Route path={RouteEnum.PROFILE} element={<Profile />} />
-            <Route path={RouteEnum.SECURITY} element={<p>Security</p>} />
+            <Route
+              path={RouteEnum.PROFILE}
+              element={<CommonComponent text="Profile" />}
+            />
+            <Route
+              path={RouteEnum.SECURITY}
+              element={<CommonComponent text="Security" />}
+            />
             <Route
               path={RouteEnum.NOTIFICATIONS}
-              element={<p>Notifications</p>}
+              element={<CommonComponent text="Notifications" />}
             />
             <Route
               path={RouteEnum.BUSINESS_PROFILE}
-              element={<p>Business profile</p>}
+              element={<CommonComponent text="Business profile" />}
             />
-            <Route path={RouteEnum.E_INVOICING} element={<p>E-invoicing</p>} />
-            <Route path={RouteEnum.TEAM} element={<p>Team</p>} />
+            <Route
+              path={RouteEnum.E_INVOICING}
+              element={<CommonComponent text="E-invoicing" />}
+            />
+            <Route
+              path={RouteEnum.TEAM}
+              element={<CommonComponent text="Team" />}
+            />
             <Route index element={<PlanLimits />} />
           </Routes>
           <Limits />

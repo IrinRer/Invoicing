@@ -15,20 +15,20 @@
   .wrapper_header {
     display: flex;
     justify-content: space-between;
-    
+
     p {
-        @include link();
-        font-size: $font-size16;
+      @include link();
+      font-size: $font-size16;
     }
 
     .number {
-        font-size: $font-size14;
+      font-size: $font-size14;
 
-        span {
-            font-size: $font-size14;
-            color: $header-nav;
-            cursor: pointer;
-        }
+      span {
+        font-size: $font-size14;
+        color: $header-nav;
+        cursor: pointer;
+      }
     }
   }
 }
@@ -48,11 +48,11 @@
 }
 
 .line_color[color='green'] {
-    background-color: $green;
-    height: 8px;
-    border-radius: 4px;
-    margin-top: -9px;
-  }
+  background-color: $green;
+  height: 8px;
+  border-radius: 4px;
+  margin-top: -9px;
+}
 
 .line_non_color {
   width: 312px;
@@ -62,11 +62,11 @@
 }
 
 .text {
-    @include link();
-    font-size: $font-size14;
-    color: $header-nav;
+  @include link();
+  font-size: $font-size14;
+  color: $header-nav;
 
-    span {
-        text-decoration: underline;
-    }
+  span {
+    text-decoration: underline;
+  }
 }

@@ -11,7 +11,7 @@ const ItemFeatures = () => {
         title={
           <>
             <p>Explore new features</p>
-            <img src={Star} alt="star.svg" className={styles.img}/>
+            <img src={Star} alt="star.svg" className={styles.img} />
           </>
         }
       >

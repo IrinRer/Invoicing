@@ -32,6 +32,11 @@
       flex-direction: column-reverse;
       align-items: start;
     }
+
+    @include media-breakpoint-only(xs) {
+      flex-direction: column-reverse;
+      align-items: start;
+    }
   }
 }
 

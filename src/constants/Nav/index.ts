@@ -8,11 +8,6 @@ export enum RouteEnum {
   TEAM = 'team',
 }
 
-export enum RouteLimits {
-  LIMITS = 'limits',
-  INVOICES = 'invoices',
-}
-
 export interface IDataHeader {
   header: string;
   price: string;

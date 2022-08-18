@@ -7,7 +7,7 @@ const PlanLimits = () => {
   return (
     <div className={styles.wrapper}>
       <ItemHeader />
-       <div className={styles.line}/>
+      <div className={styles.line} />
       <ItemFeatures />
     </div>
   );

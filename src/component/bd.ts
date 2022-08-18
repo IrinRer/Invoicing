@@ -1,4 +1,4 @@
-import { IDataHeader } from "constants/Nav";
+import { IDataHeader } from 'constants/Nav';
 
 export const bd: Array<IDataHeader> = [
   {

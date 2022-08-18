@@ -22,9 +22,9 @@
     }
 
     img {
-        @include media-breakpoint-only(xs) {
-            display: none;
-        }
+      @include media-breakpoint-only(xs) {
+        display: none;
+      }
     }
   }
 }
