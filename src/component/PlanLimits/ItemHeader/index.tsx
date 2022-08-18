@@ -37,7 +37,7 @@ const ItemHeader = () => {
       <div className={styles.wrapper_header}>
         <p className={styles.text_header}>{header}</p>
         <div className={styles.dropdown}>
-          <button type="button" className={styles.button_header}>
+          <button type="button" className={styles.button_header} >
             Change plan
           </button>
           <div className={styles.dropdown_content}>{headers}</div>

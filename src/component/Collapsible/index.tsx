@@ -26,9 +26,9 @@ const Collapsible: React.FC<IProps> = ({ open, children, title }) => {
             onClick={handleFilterOpening}
           >
             {isOpen ? (
-              <div className={styles.arrow_up} />
+              <div className={styles.arrow_up} aria-label='collapse-button'/>
             ) : (
-              <div className={styles.arrow_down} />
+              <div className={styles.arrow_down} aria-label='collapse-button'/>
             )}
           </button>
         </div>
