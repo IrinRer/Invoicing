@@ -1,7 +1,7 @@
 {
   "name": "invoicing",
   "version": "0.1.0",
-  "homepage": "https://IrinRer.github.io/Invoicing",
+  "homepage": "https://irinrer.github.io/Invoicing/",
   "private": true,
   "dependencies": {
     "classnames": "^2.3.1",
