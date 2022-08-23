@@ -15,7 +15,7 @@ const Routs = () => {
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <main className={styles.main}>
-        {size.width <= 600 ? <BurgerMenu /> : <Nav />}
+        {size.width && size.width <= 600 ? <BurgerMenu /> : <Nav />}
         <article className={styles.article}>
           <Routes>
             <Route path={RouteEnum.PLAN_LIMITS} element={<PlanLimits />} />
