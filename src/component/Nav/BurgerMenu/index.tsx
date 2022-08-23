@@ -13,11 +13,11 @@ const BurgerMenu = () => {
         <div className={styles.wrapper} onClick={handleClick}>
             {show ? (
                 <div className={styles.wrapper_menu}>
-                    <div className={styles.close} />
+                    <div className={styles.close}/>
                     <Menu />
                 </div>
             ) : (
-                <div className={styles.wrapper_burger}>
+                <div className={styles.wrapper_burger} role='button'>
                     <div className={styles.line} />
                     <div className={styles.line} />
                     <div className={styles.line} />

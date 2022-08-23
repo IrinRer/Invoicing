@@ -3,6 +3,7 @@ body {
   background-color: #e5e5e5;
   font-family: 'Lato';
   -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color:transparent;
   -moz-osx-font-smoothing: grayscale;
 }
 
