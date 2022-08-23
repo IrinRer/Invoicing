@@ -7,18 +7,12 @@ interface Size {
 
 export const useWindowSize = (): Size => {
   const [windowSize, setWindowSize] = useState<Size>({
-    width: 0,
-    height: 0,
+    width: 1000,
+    height: 1000,
   });
 
   useEffect(() => {
     function handleResize() {
-      // if (
-      //   (windowSize.width !== undefined &&
-      //     Math.abs(windowSize.width - window.innerWidth) > 10) ||
-      //   windowSize.width === undefined ||
-      //   windowSize.height === undefined
-      // ) {
       setWindowSize({
         width: window.innerWidth,
         height: window.innerHeight,

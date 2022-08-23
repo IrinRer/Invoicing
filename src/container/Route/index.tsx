@@ -2,7 +2,7 @@ import React from 'react';
 import Nav from 'component/Nav';
 import PlanLimits from 'component/PlanLimits';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { useWindowSize } from 'server/useWindowSize';
+import { useWindowSize } from 'customHooks/useWindowSize';
 import BurgerMenu from 'component/Nav/BurgerMenu';
 import Limits from 'component/Limits';
 import CommonComponent from '../../common/CommonComponent';
