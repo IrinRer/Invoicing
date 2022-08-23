@@ -2,16 +2,20 @@ import React from 'react';
 import Nav from 'component/Nav';
 import PlanLimits from 'component/PlanLimits';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { useWindowSize } from 'server/useWindowSize';
+import BurgerMenu from 'component/Nav/BurgerMenu';
 import Limits from 'component/Limits';
 import CommonComponent from '../../common/CommonComponent';
 import { RouteEnum } from '../../constants/Nav/index';
 import styles from './index.module.scss';
 
 const Routs = () => {
+  const size = useWindowSize();
+
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <main className={styles.main}>
-        <Nav />
+       {size.width <= 700 ? <BurgerMenu/> : <Nav />}
         <article className={styles.article}>
           <Routes>
             <Route path={RouteEnum.PLAN_LIMITS} element={<PlanLimits />} />
